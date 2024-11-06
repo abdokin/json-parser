@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:json-parser}",
+            "name": "Debug json-parser",
+            "program": "${workspaceFolder:json-parser}/.build/debug/json-parser",
+            "preLaunchTask": "swift: Build Debug json-parser"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:json-parser}",
+            "name": "Release json-parser",
+            "program": "${workspaceFolder:json-parser}/.build/release/json-parser",
+            "preLaunchTask": "swift: Build Release json-parser"
+        }
+    ]
+}
