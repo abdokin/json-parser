@@ -5,7 +5,13 @@ import PackageDescription
 
 let package = Package(
     name: "json-parser",
+    dependencies: [
+        .package(url: "https://github.com/apple/swift-argument-parser", from: "1.3.0"),
+    ],
     targets: [
-        .executableTarget(name: "json-parser")
+        .executableTarget(name: "json-parser", dependencies: [
+                .product(name: "ArgumentParser", package: "swift-argument-parser"),
+            ]
+        )
     ]
 )
